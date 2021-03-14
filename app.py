@@ -14,7 +14,13 @@ users = []
 users.append(User(id=1, username='whyapar', password='12345'))
 users.append(User(id=2, username='pp_seen2825', password='12345'))
 users.append(User(id=3, username='wawawawhannnn', password='12345'))
-users.append(User(id=3, username='nuttakitt_', password='12345'))
+users.append(User(id=4, username='nuttakitt_', password='12345'))
+users.append(User(id=5, username='cchanya', password='12345'))
+users.append(User(id=6, username='linnyy', password='12345'))
+users.append(User(id=7, username='_praewr', password='12345'))
+users.append(User(id=8, username='ppuiifaii_', password='12345'))
+users.append(User(id=9, username='faififfy_23', password='12345'))
+users.append(User(id=10, username='tennnnie', password='12345'))
 
 app = Flask(__name__)
 app.secret_key = 'somesecretkeythatonlyishouldknow'
@@ -55,6 +61,18 @@ def login_template():
                 return redirect(url_for('wawawawhannnn_template'))
             elif user.id == 4:
                 return redirect(url_for('nuttakitt__template'))
+            elif user.id == 5:
+                return redirect(url_for('cchanya_template'))
+            elif user.id == 6:
+                return redirect(url_for('linnyy_template'))
+            elif user.id == 7:
+                return redirect(url_for('_praewr_template'))
+            elif user.id == 8:
+                return redirect(url_for('ppuiifaii__template'))
+            elif user.id == 9:
+                return redirect(url_for('faififfy_23_template'))
+            elif user.id == 10:
+                return redirect(url_for('tennnnie_template'))
         return redirect(url_for('login_template'))
     return render_template('login.html')
 
@@ -62,25 +80,61 @@ def login_template():
 def whyapar_template():
     if not g.user:
         return redirect(url_for('login_template'))
-    return render_template('whyapar.html')
+    return render_template('friendship/whyapar.html')
 
 @app.route('/pp_seen2825')
 def pp_seen2825_template():
     if not g.user:
         return redirect(url_for('login_template'))
-    return render_template('pp_seen2825.html')
+    return render_template('friendship/pp_seen2825.html')
 
 @app.route('/wawawawhannnn')
 def wawawawhannnn_template():
     if not g.user:
         return redirect(url_for('login_template'))
-    return render_template('wawawawhannnn.html')
+    return render_template('friendship/wawawawhannnn.html')
 
 @app.route('/nuttakitt_')
 def nuttakitt__template():
     if not g.user:
         return redirect(url_for('login_template'))
-    return render_template('nuttakitt_.html')
+    return render_template('friendship/nuttakitt_.html')
+
+@app.route('/cchanya')
+def cchanya_template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/cchanya.html')
+
+@app.route('/linnyy')
+def linnyy_template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/linnyy.html')
+
+@app.route('/_praewr')
+def _praewr_template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/_praewr.html')
+
+@app.route('/ppuiifaii_')
+def ppuiifaii__template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/ppuiifaii_.html')
+
+@app.route('/faififfy_23')
+def faififfy_23_template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/faififfy_23.html')
+
+@app.route('/tennnnie')
+def tennnnie_template():
+    if not g.user:
+        return redirect(url_for('login_template'))
+    return render_template('friendship/tennnnie.html')
 
 @app.route('/contact')
 def contact_template():
