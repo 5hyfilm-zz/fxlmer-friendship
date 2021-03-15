@@ -221,9 +221,11 @@ button{
 }
 
 .responsive-image2{
+  flex: 1;
+  display: flex;
+  object-fit: cover;
   width: auto;
   height: auto;
-  flex: 1;
   /* animation: drop 1.5s ease; */
 }
 
