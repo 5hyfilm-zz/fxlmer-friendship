@@ -136,9 +136,9 @@ def tennnnie_template():
         return redirect(url_for('login_template'))
     return render_template('friendship/tennnnie.html')
 
-@app.route('/contact')
+@app.route('/contactme')
 def contact_template():
-    return render_template('contact.html')
+    return render_template('contactme.html')
 
 if __name__ == "__main__":
     app.debug=False
