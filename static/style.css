@@ -221,7 +221,7 @@ button{
 }
 
 .responsive-image2{
-  width: autp;
+  width: auto;
   height: auto;
   flex: 1;
   /* animation: drop 1.5s ease; */
