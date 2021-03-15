@@ -11,7 +11,7 @@
 .topic{
 font-family: 'Prompt', sans-serif;
 text-align: center;
-}  
+}
 body{
   font-family: 'Prompt', sans-serif;
 }
@@ -77,7 +77,7 @@ a.active,a:hover{
   .checkbtn{
     display: block;
   }
-  
+
   ul{
     position: fixed;
     width: 100%;
@@ -216,7 +216,7 @@ button{
 
 .responsive-image{
   width: 100%;
-  height: auto;
+  height: 100%;
   /* animation: drop 1.5s ease; */
 }
 
@@ -224,15 +224,15 @@ button{
   flex: 1;
   display: flex;
   object-fit: cover;
-  width: auto;
-  height: auto;
+  width: 410.72%;
+  height: 410.72;
   /* animation: drop 1.5s ease; */
 }
 
 #image-preview{
   justify-content: center;
   border:1px solid #000;
-  height: 336px; 
+  height: 336px;
   width: 336px;
 }
 
