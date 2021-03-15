@@ -103,7 +103,7 @@ a.active,a:hover{
   }
 
 section{
-  background: url(bg1.jpg) no-repeat;
+  background: no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
@@ -218,6 +218,12 @@ button{
   /* animation: drop 1.5s ease; */
 }
 
+.responsive-image2{
+  width: 100%;
+  height: calc(100vh - 80px);
+  /* animation: drop 1.5s ease; */
+}
+
 #image-preview{
   justify-content: center;
   border:1px solid #000;
@@ -273,13 +279,11 @@ button{
      padding: 10px 0px 0px 0px;
  }
 
-  .imagemenu-item-large {
-    float: none;
-  }
-
-  .imagemenu-item-large img {
-    width: 100%;
-  }
+ .cover img{
+     /* height: 100%; */
+     width: 100%;
+     height: auto;
+ }
 
  .small-circle,
  .mid-circle,
