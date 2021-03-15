@@ -273,11 +273,13 @@ button{
      padding: 10px 0px 0px 0px;
  }
 
- .cover img{
-     /* height: 100%; */
-     width: 100%;
-     height: auto;
- }
+  .imagemenu-item-large {
+    float: none;
+  }
+
+  .imagemenu-item-large img {
+    width: 100%;
+  }
 
  .small-circle,
  .mid-circle,
