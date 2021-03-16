@@ -207,8 +207,7 @@ button{
 }
 
 .cover img{
-  height: 100%;
-  /* width: 100%;
+  width: 100%;
   height: auto; */
   /* filter: drop-shadow(0px 5px 3px black); */
   animation: drop 1.5s ease;
