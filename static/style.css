@@ -51,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #ff5ea2;
+    color: #ff8400;
 }
 
 .row{
@@ -95,7 +95,7 @@ button{
     padding: 12px 10px;
     outline:  none;
     color: #fff;
-    background: linear-gradient(to right, #fb5283, #ff3527);
+    background: linear-gradient(to right, #ff8400, #ff9e27);
     border-radius: 6px;
     cursor: pointer;
     transition: width 0.5s;
@@ -121,7 +121,7 @@ button:hover{
     content: '';
     width: 10px;
     height: 57%;
-    background: linear-gradient(#ff469f, #ff6062);
+    background: linear-gradient( #526efb, #27c2ff);
     position: absolute;
     left: -40px;
     top: 8px;
@@ -176,7 +176,7 @@ button:hover{
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
-        background: linear-gradient(#ff54a2, #ff575a);
+        background: linear-gradient( #526efb, #27c2ff);
         position: absolute;
         top: 75px;
         right: 0;
@@ -213,7 +213,7 @@ button:hover{
     }
 
     .col-2 .image{
-        width: 77%;
+        width: 100%;
         align-items: center;
     }
 
