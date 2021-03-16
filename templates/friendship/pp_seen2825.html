@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fxlmer's Friendship</title>
         <link rel="stylesheet" href="static/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" sizes="72x72" href="/static/images/SkinFine_icon.png">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Fxlmer's friendship</label>
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a class="active" href="/login">pp_seen2825</a></li>
-            <li><a href="/contactme">Contact Me</a></li>
-        </ul>
-        </nav>
-    <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>YaHallo! แป้ง PCSHS-PT23</h1>
-                    <p>จำไม่ได้ว่าคุยกันครั้งแรกตอนไหน รู้จักกันได้ยังไง รู้ตัวอีกทีคือสนิทชิบหาย(ไม่รู้ว่าคิดเองคนเดียวหรือป่าว) มึงแม่งคนดีชิบหาย ตอบแชทกุตลอด ให้กุระบายบ่นได้ตลอด นานทีๆ จะเจอคนแบบนี้ ปลื้มใจจริงๆ แต่รู้สึกเสียดายน่าจะมาเรียนจุฬาด้วยกัน สุดท้ายนี้ขอบอกว่าขอโทษที่เป็นคนเหี้ย แต่ไม่ต้องให้อภัยหรอก</p>
+        <div class="container">
+            <div class="navbar">
+                <img src="static/images/logo.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="/home">HOME</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                            <li><a href="/contactme">CONTACT ME</a></li>
+                        </ul>
+                    </nav>
+                <img src="static/images/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>YaHallo เอิร์น</h2>
+                    <p>จำไม่ได้ว่าคุยกันครั้งแรกตอนไหน รู้จักกันได้ยังไง รู้ตัวอีกทีคือสนิทชิบหาย (ไม่รู้ว่าคิดเองคนเดียวหรือป่าว) มึงแม่งคนดีชิบหาย ตอบแชทกุตลอด ให้กุระบายบ่นได้ตลอด นานทีๆ จะเจอคนแบบนี้ ปลื้มใจจริงๆ แต่รู้สึกเสียดายน่าจะมาเรียนจุฬาด้วยกัน สุดท้ายนี้ขอบอกว่าขอโทษที่เป็นคนเหี้ย แต่ไม่ต้องให้อภัยหรอก</p>
+                </div>
+                <div class="col-2">
+                    <img src="static/images/friendship/film_earn.png" class="controller">
+                    <!-- <div class="color-box"></div> -->
+                    <!-- <div class="add-btn">
+                        <img src="images/add.png">
+                        <p><small>Go</small></p>
+                    </div> -->
                 </div>
             </div>
-            <div class="cover">
-                <img src="/static/images/profile.png" alt="me" width="80%" height="80%"/>
+            <div class="social-links">
+                <img src="static/images/fb.png">
+                <img src="static/images/tw.png">
+                <img src="static/images/ig.png">
             </div>
-        </section>
-    </main>
+        </div> 
+        <script src="static/app.js"></script>
     </body>
-  </html>
+</html>

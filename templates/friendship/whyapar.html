@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fxlmer's Friendship</title>
         <link rel="stylesheet" href="static/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" sizes="72x72" href="/static/images/SkinFine_icon.png">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Fxlmer's friendship</label>
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a class="active" href="/login">whyapar</a></li>
-            <li><a href="/contactme">Contact Me</a></li>
-        </ul>
-        </nav>
-    <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>YaHallo! เอิร์น PCSHS-PT23</h1>
+        <div class="container">
+            <div class="navbar">
+                <img src="static/images/logo.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="/home">HOME</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                            <li><a href="/contactme">CONTACT ME</a></li>
+                        </ul>
+                    </nav>
+                <img src="static/images/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>YaHallo เอิร์น</h2>
                     <p>เห็นครั้งแรกตอนปฐมนิเทศอยู่กลุ่มเดียวกัน ตอนนั้นรู้สึกว่าคนนี้น่ารักดี555 แต่ไม่ได้คิดอะไร ตอนนั้นคุณดูเก่งดี แข่งเขียนโปรแกรมภาษา C ได้รางวัลด้วย โคตรเทพอ่ะ รู้เลยคนนี้สายคอมแน่ๆ ก็เลยคิดว่าสงสัยคนนี้จะเป็นศัตรูกันแน่ๆ แล้วพอคุณเข้ารอบ YMC ผมละโมโหลเลย คิดว่าทำไมคนนี้เข้ารอบฟะ!? แต่นั่นแหละพอไปงาน TJ-SIF 2020 ก็เลยได้คุยกันจริงจัง ก็รู้สึกว่าสนิทอยู่นะ(หรือเราคิดไปเองแค่ฝ่ายเดียว) คุยกันหนักๆ อีกทีก็คงช่วงยื่นพอร์ต เอาจริงตอนแรกแอบเครียดว่าผมได้แล้วสละสิทธิ์จะไปกั๊กที่คุณ ตอนแรกเลยจะไม่สมัคร แต่ดีที่ติดทั้งคู่ มีอะไรคุณก็ช่วยผมตลอด โคตรคนดีเลย นั่นแหละจบละ สุดท้ายนี้ขอบอกว่าขอโทษที่เป็นคนเหี้ย แต่ไม่ต้องให้อภัยหรอก</p>
                 </div>
+                <div class="col-2">
+                    <img src="static/images/friendship/film_earn.png" class="controller">
+                    <!-- <div class="color-box"></div> -->
+                    <!-- <div class="add-btn">
+                        <img src="images/add.png">
+                        <p><small>Go</small></p>
+                    </div> -->
+                </div>
             </div>
-            <div class="responsive-image2">
-                <img src="/static/images/friendship/film_earn.png" alt="me" width="80%" height="80%"/>
+            <div class="social-links">
+                <img src="static/images/fb.png">
+                <img src="static/images/tw.png">
+                <img src="static/images/ig.png">
             </div>
-        </section>
-    </main>
+        </div> 
+        <script src="static/app.js"></script>
     </body>
-  </html>
+</html>
