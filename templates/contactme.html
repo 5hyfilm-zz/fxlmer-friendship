@@ -1,56 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" sizes="72x72" href="/static/images/SkinFine_icon.png">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Fxlmer's Friendship</title>
+        <link rel="stylesheet" href="static/style.css">
     </head>
 
     <body>
-        <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo" href="/home">XXX friendship</label>
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a class="active" href="/contact">Contact</a></li>
-        </ul>
-        </nav>
-
-    <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>Contact Me</h1>
-                    <!-- <p>Princess Chulabhorn Science High School Pathum Thani</p> -->
-                    <p>E-mail:</p>
-                    <p>Facebook: </p>
-                    <p>Instagram:</p>
-                    <p>Website: </p>
+        <div class="container">
+            <div class="navbar">
+                <img src="static/images/logo.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="/home">HOME</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                            <li><a href="/contactme">CONTACT ME</a></li>
+                        </ul>
+                    </nav>
+                <img src="static/images/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>Fxlmer's Friendship</h2>
+                    <h3>Web Application</h3>
+                    <p>Smartphone</p>
+                    <h4>Free</h4>
+                    <button type="button">Buy Now<img src="static/images/arrow.png"></button>
                 </div>
-                <!-- <div class="cta">
-                    <button class="cta-select">Info</button>
-                    <button class="cta-add">Predict</button>
-                </div> -->
+
+                <div class="col-2">
+                    <img src="static/images/film.png" class="controller">
+                    <!-- <div class="color-box"></div> -->
+                    <div class="add-btn">
+                        <img src="images/add.png">
+                        <p><small>Go</small></p>
+                    </div>
+                </div>
             </div>
-            <div class="cover">
-                <img src="/static/images/film.png" alt="me", width="100%", height="100%"/>
+
+            <div class="social-links">
+                <img src="static/images/fb.png">
+                <img src="static/images/tw.png">
+                <img src="static/images/ig.png">
             </div>
-        </section>
-
-        <!-- <img class="big-circle" src="/static/images/big-eclipse.svg" alt=""/>
-        <img class="mid-circle" src="/static/images/mid-eclipse.svg" alt=""/>
-        <img class="small-circle" src="/static/images/small-eclipse.svg" alt=""/> -->
-
-    </main>
-
+        </div>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+      
+        
     </body>
-
-  </html>
+</html>
