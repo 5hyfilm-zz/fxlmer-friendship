@@ -134,7 +134,7 @@ button:hover{
     align-items: center;
 }
 
-.col-2 .controller{
+.col-2 .image{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -212,7 +212,7 @@ button:hover{
         margin-bottom: 50px;
     }
 
-    .col-2 .controller{
+    .col-2 .image{
         width: 77%;
         align-items: center;
     }
