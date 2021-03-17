@@ -11,16 +11,16 @@ class User:
         return f'<User: {self.username}>'
 
 users = []
-users.append(User(id=1, username='whyapar', password='12345'))
-users.append(User(id=2, username='pp_seen2825', password='12345'))
-users.append(User(id=3, username='wawawawhannnn', password='12345'))
-users.append(User(id=4, username='nuttakitt_', password='12345'))
-users.append(User(id=5, username='cchanya', password='12345'))
-users.append(User(id=6, username='linnyy', password='12345'))
-users.append(User(id=7, username='_praewr', password='12345'))
-users.append(User(id=8, username='ppuiifaii_', password='12345'))
-users.append(User(id=9, username='faififfy_23', password='12345'))
-users.append(User(id=10, username='tennnnie', password='12345'))
+users.append(User(id=1, username='whyapar', password='04582'))
+users.append(User(id=2, username='pp_seen2825', password='04679'))
+users.append(User(id=3, username='wawawawhannnn', password='04630'))
+users.append(User(id=4, username='nuttakitt_', password='03960'))
+users.append(User(id=5, username='cchanya', password='04623'))
+users.append(User(id=6, username='linnyy', password='04628'))
+users.append(User(id=7, username='_praewr', password='04632'))
+users.append(User(id=8, username='ppuiifaii_', password='03948'))
+users.append(User(id=9, username='faififfy_23', password='04683'))
+users.append(User(id=10, username='tennnnie', password='04631'))
 
 app = Flask(__name__)
 app.secret_key = 'somesecretkeythatonlyishouldknow'
