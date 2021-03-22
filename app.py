@@ -21,7 +21,7 @@ users.append(User(id=7, username='_praewr', password='04632'))
 users.append(User(id=8, username='ppuiifaii_', password='03948'))
 users.append(User(id=9, username='faififfy_23', password='04683'))
 users.append(User(id=10, username='tennnnie', password='04631'))
-users.append(User(id=10, username='tun_ariy', password='04621'))
+users.append(User(id=11, username='tun_ariy', password='04621'))
 
 app = Flask(__name__)
 app.secret_key = 'somesecretkeythatonlyishouldknow'
