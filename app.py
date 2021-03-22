@@ -139,6 +139,12 @@ def tennnnie_template():
         return redirect(url_for('signin_template'))
     return render_template('friendship/tennnnie.html')
 
+@app.route('/tun_ariy')
+def tun_ariy_template():
+    if not g.user:
+        return redirect(url_for('signin_template'))
+    return render_template('friendship/tun_ariy.html')
+
 @app.route('/contactme')
 def contact_template():
     return render_template('contactme.html')
